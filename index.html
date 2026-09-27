@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leash to Legacy - Dog Obedience & Service Dog Training</title>
+  
+  <!-- Preconnect para fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <!-- Supabase SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase-config.js"></script>
+  
+  <!-- CSS - RUTAS CORRECTAS -->
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/responsive-extra.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="service-link">Services <span class="arrow">▼</span></a>
+            <ul class="dropdown-content">
+              <li><a href="puppy-concierge.html">Puppy Concierge</a></li>
+              <li><a href="boarding-service.html">Boarding Service</a></li>
+              <li><a href="training-services.html">Training Services</a></li>
+            </ul>
+          </li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-logo">
+        <a href="index.html"><img src="IMG/Logo.png" alt="Leash to Legacy Logo" width="85"></a>
+      </div>
+
+      <div class="header-right">
+        <span class="phone"><i class="fas fa-phone-alt"></i> 904-563-7550</span>
+        <div class="login-group">
+          <img src="IMG/icono-login.png" alt="Login Icon" class="login-icon" width="26">
+          <a href="#" class="login-btn">Login</a>
+        </div>
+      </div>
+
+      <button class="menu-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-wrapper">
+      <div class="left-paws">
+        <img src="IMG/huella.png" alt="Paw" class="paw small">
+        <img src="IMG/huella.png" alt="Paw" class="paw small">
+      </div>
+
+      <div class="hero-center">
+        <h2 id="hero-subtitle">DOG OBEDIENCE AND SERVICE DOG TRAINING</h2>
+        <img src="IMG/Logo.png" alt="Leash to Legacy Logo" class="logo-large">
+        <div class="hero-buttons">
+          <a href="#contact" class="btn dark">CONTACT US</a>
+          <a href="#about" class="btn yellow">LEARN MORE ABOUT US</a>
+        </div>
+      </div>
+
+      <img id="hero-image" src="IMG/Perro home.png" alt="Happy Beagle" class="hero-dog flipped">
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="about">
+    <h2 id="about-title">About Us</h2>
+    <div class="about-grid">
+      <div class="about-text" id="about-content">
+        <p>We are so glad you stopped by our webpage! Our main goal is to make you and your pup a better functioning, safe team. We begin our instruction in your home. This allows me to see your house and dog in action. We will discuss your ideas and what you want from our sessions. We can start in the first session with beginning commands: sit, down, touch/boop. From there, we can create a teaching schedule the whole family can be part of. Learning for a dog can have its limitations as a human learning, patience, and repetition. I was taught Positive Reinforcement; this is safer and keeps your dog attentive. Reach out on our contact page, and I will get back with you! You are going to make a great team!</p>
+      </div>
+      <div class="about-image">
+        <img src="IMG/bio.png" alt="Trainer with puppy" class="circle-img">
+      </div>
+    </div>
+    <img src="IMG/Pata-perro.png" alt="" class="pata-perro">
+    <img src="IMG/Cola-perro.png" alt="" class="cola-perro">
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="contact-wrapper">
+      <img src="IMG/Logo-contact.png" alt="" class="watermark-logo">
+      <h2>Contact</h2>
+
+      <form class="contact-form" id="contact-form">
+        <input type="text" name="name" placeholder="NAME" required />
+        <input type="email" name="email" placeholder="EMAIL" required />
+        <input type="tel" name="phone" placeholder="PHONE (optional)" />
+        <textarea name="message" placeholder="MESSAGE" required></textarea>
+        <button type="submit">SEND MESSAGE</button>
+      </form>
+      <p id="contact-form-status" class="contact-form-status"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p><strong>Shawn Phillips</strong></p>
+          <p><a href="mailto:shawn@leashtolegacy.org">shawn@leashtolegacy.org</a></p>
+          <p><a href="tel:+19045637550">904-563-7550</a></p>
+
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61587715742095&mibextid=wwXIfr&rdid=qNCpnVqdGIh7SsYB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F191VqSRoPQ%2F%3Fmibextid%3DwwXIfr%26ref%3D1#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© 2025 Leash to Legacy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/menu.js"></script>
+  <!-- Script de login -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginBtns = document.querySelectorAll('.login, .login-btn, [class*="login"]');
+      loginBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.location.href = 'login.html';
+        });
+      });
+    });
+  </script>
+
+  <!-- Script para enviar el formulario de contacto con Supabase -->
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const btn = this.querySelector('button');
+      const status = document.getElementById('contact-form-status');
+
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      status.textContent = '';
+      status.className = 'contact-form-status';
+
+      const name    = this.querySelector('[name="name"]').value.trim();
+      const email   = this.querySelector('[name="email"]').value.trim();
+      const phone   = this.querySelector('[name="phone"]').value.trim();
+      const message = this.querySelector('[name="message"]').value.trim();
+
+      try {
+        const { error } = await window.supabaseClient
+          .from('contact_messages')
+          .insert([{ name, email, phone, message }]);
+
+        if (error) throw error;
+
+        status.textContent = '✓ Message sent! We will get back to you soon.';
+        status.className = 'contact-form-status success';
+        this.reset();
+      } catch (err) {
+        console.error('Error sending message:', err);
+        status.textContent = '✗ Error sending message. Please try again or call us directly.';
+        status.className = 'contact-form-status error';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'SEND MESSAGE';
+      }
+    });
+  </script>
+
+  <script>
+    async function loadContent() {
+      try {
+        console.log('Cargando datos desde Supabase...');
+        const { data: configData, error: configError } = await window.supabaseClient
+          .from('site_config')
+          .select('*');
+        
+        if (configError) throw configError;
+
+        const config = {};
+        configData.forEach(item => { config[item.id] = item.content; });
+
+        // HERO
+        if (config.hero) {
+          const subtitle = document.getElementById('hero-subtitle');
+          const image = document.getElementById('hero-image');
+          if (subtitle) subtitle.textContent = config.hero.subtitulo;
+          if (image) image.src = config.hero.imagen;
+        }
+
+        // ABOUT US
+        if (config.about_us) {
+          const title = document.getElementById('about-title');
+          const content = document.getElementById('about-content');
+          if (title) title.textContent = config.about_us.titulo;
+          if (content) {
+            const paragraphs = config.about_us.texto.split('\n\n').filter(p => p.trim());
+            content.innerHTML = paragraphs.map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+          }
+        }
+
+        // SOCIAL
+        if (config.social) {
+          const links = document.querySelectorAll('.social-links a');
+          if (links.length >= 5) {
+            links[0].href = config.social.facebook || '#';
+            links[1].href = config.social.instagram || '#';
+            links[2].href = config.social.tiktok || '#';
+            links[3].href = config.social.youtube || '#';
+            links[4].href = config.social.whatsapp || '#';
+          }
+        }
+      } catch (error) {
+        console.error('Error cargando datos de Supabase:', error);
+      }
+    }
+    
+    loadContent();
+    
+    document.addEventListener('visibilitychange', function() {
+      if (!document.hidden) {
+        console.log('Página visible nuevamente, recargando datos...');
+        loadContent();
+      }
+    });
+    
+    setInterval(loadContent, 30000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* ==================================================
+   RESPONSIVE-EXTRA.CSS - Ajustes de precisión móvil
+   ================================================== */
+
+@media (max-width: 950px) {
+    /* GENERAL CENTERING */
+    .container, .hero, .about, .services, .features, .blog-hero, .main-content {
+        text-align: center !important;
+    }
+    
+    .section-title, .section-subtitle {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        padding: 40px 20px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hero-wrapper {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 30px;
+        width: 100%;
+    }
+    
+    .left-paws {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .paw.small {
+        width: 30px !important;
+        height: auto;
+        opacity: 0.5;
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-dog {
+        width: 100% !important;
+        max-width: 320px !important;
+        position: relative !important;
+        right: 0 !important;
+        margin: 20px auto 0 !important;
+        display: block;
+    }
+    
+    .logo-large {
+        width: 180px !important;
+        margin: 0 auto;
+    }
+    
+    #hero-subtitle {
+        font-size: 1rem !important;
+        max-width: 300px;
+        margin: 15px auto !important;
+    }
+
+    .hero-buttons {
+        justify-content: center !important;
+        width: 100%;
+    }
+
+    /* ABOUT US */
+    .about {
+        padding: 60px 20px;
+        position: relative;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 40px;
+    }
+    
+    .about-image {
+        order: -1; /* Image on top on mobile */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .circle-img {
+        width: 220px !important;
+        height: 220px !important;
+        margin: 0 auto;
+    }
+    
+    .pata-perro {
+        width: 80px !important;
+        bottom: 10px !important;
+        left: 50% !important;
+        transform: translateX(-150%) !important;
+        opacity: 0.4;
+    }
+    
+    .cola-perro {
+        width: 60px !important;
+        top: 20px !important;
+        right: 50% !important;
+        transform: translateX(150%) !important;
+        opacity: 0.4;
+    }
+
+    /* RESPONSIVE MENU FIXES */
+    .menu-toggle {
+        display: block !important;
+        z-index: 1001;
+    }
+
+    .main-nav {
+        display: none; /* Escondido por defecto en móvil */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 30px 0;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        z-index: 1000;
+        border-top: 1px solid #eee;
+    }
+
+    .main-nav.active {
+        display: block !important;
+        animation: slideDown 0.3s ease-out forwards;
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .main-nav ul {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .main-nav a {
+        font-size: 1.1rem !important;
+        padding: 10px 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo img { width: 70px; }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn {
+        width: 100%;
+        padding: 12px 20px !important;
+    }
+    .about-text p {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,111 @@
+/* ==================================================
+   FOOTER.CSS - Versión Centrada Absolute
+   ================================================== */
+
+.site-footer {
+    background: #ffd166 !important; /* Amarillo oficial de la página */
+    color: #333;
+    padding: 80px 24px 60px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.footer-info p {
+    margin: 8px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer-info strong {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.footer-info a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-info a:hover {
+    color: #4a90e2;
+}
+
+/* Redes Sociales - Centrado perfecto */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Reducido para que quepan los 5 en fila */
+    margin: 40px 0;
+    width: 100%;
+    flex-wrap: nowrap !important; /* Evita que el de WhatsApp se baje */
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    line-height: 1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
+}
+
+.social-links i {
+    font-size: 56px; /* Aún más grandes y claros */
+    display: block;
+}
+
+.social-links a:hover {
+    transform: translateY(-12px) scale(1.18);
+    color: #4a90e2;
+}
+
+.copyright {
+    font-size: 1.05rem;
+    color: #666;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .site-footer { padding: 60px 20px 40px; }
+    .social-links { gap: 24px; }
+    .social-links i { font-size: 44px; }
+    .footer-info strong { font-size: 1.3rem; }
+}

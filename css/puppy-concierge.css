@@ -1,0 +1,356 @@
+/* ==================================================
+   PUPPY-CONCIERGE.CSS - Estilos completos y corregidos
+   ================================================== */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body.puppy-concierge-page {
+  font-family: 'Nunito', sans-serif;
+  background: #A0CDEA;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 80px;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 4px;
+}
+
+.main-nav a {
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover { color: #f8dea2; }
+
+.arrow {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 0.85rem;
+  transition: transform 0.3s;
+}
+
+.dropdown:hover .arrow { transform: rotate(180deg); }
+
+.dropdown { position: relative; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 210px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  top: 100%;
+  left: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-content li:last-child { border-bottom: none; }
+
+.dropdown-content a {
+  display: block;
+  padding: 14px 20px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.98rem;
+}
+
+.dropdown-content a:hover { background: #f0f8ff; }
+
+.header-logo img {
+  max-height: 50px;
+  width: auto;
+  display: block;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.phone {
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #444;
+  white-space: nowrap;
+}
+
+.login-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-icon { vertical-align: middle; }
+
+.login, .login-btn {
+  background: #4a90e2;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.login:hover, .login-btn:hover {
+  background: #3a7bc8;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.puppy-text {
+  position: relative;
+  z-index: 5;
+}
+
+.puppy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  padding: 60px 40px;
+}
+
+.puppy-text h1 {
+  font-size: 3rem;
+  color: #383838;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.puppy-text p {
+  font-size: 1.18rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.puppy-image {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-image {
+  width: 140%;
+  max-width: 720px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.sombra-float {
+  position: absolute;
+  top: 87%;
+  left: 1%;
+  width: 150%;
+  max-width: 780px;
+  height: auto;
+  z-index: 1;
+  opacity: 0.8;
+  pointer-events: none;
+  filter: blur(3px) brightness(0.65);
+}
+
+.cola-float {
+  position: absolute;
+  top: -50px;
+  right: -150px;
+  width: 180px;
+  height: auto;
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0.95;
+  transform: rotate(15deg);
+}
+
+.pata-float {
+  position: absolute;
+  top: -50px;
+  left: -350px;
+  width: 280px;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.6;
+  transform: rotate(-15deg);
+}
+
+.huella-float {
+  position: absolute;
+  width: 55px;
+  height: auto;
+  opacity: 0.65;
+  pointer-events: none;
+  z-index: 3;
+  filter: blur(0.8px);
+}
+
+.huella-1 { bottom: 70%; left: 120%; transform: rotate(-45deg); }
+.huella-2 { bottom: 60%; left: 110%; transform: rotate(-45deg); }
+.huella-3 { bottom: 55%; left: 130%; transform: rotate(-45deg); }
+.huella-4 { bottom: 45%; left: 120%; transform: rotate(-45deg); }
+
+/* El footer se maneja ahora desde css/footer.css para consistencia en todo el sitio */
+
+@media (max-width: 1200px) {
+  .cola-float { right: -100px; width: 150px; }
+  .pata-float { left: -200px; width: 220px; }
+}
+
+@media (max-width: 950px) {
+  .puppy-grid {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .puppy-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .puppy-text h1 { font-size: 2.2rem; text-align: center; }
+  .puppy-text p { font-size: 1.1rem; text-align: center; }
+  
+  .puppy-image {
+    order: -1; /* Photo on top if better, or keep below? Usually better on top for this layout */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .main-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .sombra-float {
+    width: 100%;
+    max-width: 420px;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .cola-float {
+    width: 80px;
+    top: -30px;
+    right: 50%;
+    transform: translateX(180px) rotate(10deg);
+  }
+  
+  .pata-float {
+    width: 130px;
+    top: -40px;
+    left: -80px;
+    transform: rotate(-15deg);
+  }
+  
+  .huella-float { 
+    width: 30px !important; 
+    opacity: 0.3;
+  }
+  .huella-1 { bottom: 20%; left: 10%; }
+  .huella-2 { bottom: 15%; left: 20%; }
+  .huella-3 { bottom: 10%; left: 75%; }
+  .huella-4 { bottom: 5%; left: 85%; }
+}
+
+@media (max-width: 768px) {
+  body.puppy-concierge-page { padding-top: 68px; }
+  
+  .menu-toggle { display: block; }
+  
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .main-nav.active { display: block; }
+  
+  .main-nav.active ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-right { gap: 10px; }
+  .phone { font-size: 0.85rem; }
+  
+}
